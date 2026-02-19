@@ -1,0 +1,67 @@
+Final Summary
+
+>>Methodology
+
+The objective of this analysis was to evaluate how Bitcoin market sentiment (Fear/Greed index) influences trader behavior and performance on Hyperliquid.
+
+First, trade-level data was aggregated to a daily account-level dataset. Key metrics were engineered including daily PnL, win rate, trading frequency (trades per day), average trade size (USD), total volume traded, and long/short directional bias.
+
+Sentiment data was aligned at the daily level and merged with trader metrics.
+
+The analysis was conducted across sentiment regimes (Extreme Fear, Fear, Neutral, Greed, Extreme Greed) to examine differences in both performance and behavioral patterns.
+
+Additionally, traders were segmented into:
+
+**High vs Low frequency traders**
+
+**Consistent vs Inconsistent traders**
+
+**Behavioral clusters using K-Means clustering**
+
+This allowed identification of structural differences in profitability across regimes and trader types.
+
+>>Key Insights
+
+**Insight 1 — Performance Varies Across Sentiment Regimes**
+
+Trader performance differs meaningfully across regimes.
+Extreme Greed shows the highest win rates and strong median profitability, indicating that momentum-driven environments benefit active traders.
+
+Fear regimes exhibit the highest PnL volatility, reflecting greater dispersion in outcomes and increased risk exposure.
+
+**Insight 2 — Behavior Changes During Fear Regimes**
+
+Trading activity increases significantly during Fear periods:
+
+Higher trades per day
+
+Larger total traded volume
+
+Slightly higher long bias
+
+This suggests traders actively attempt to capture reversals or volatility spikes rather than reducing exposure.
+
+**Insight 3 — Segmentation Reveals Performance Gaps**
+
+High-frequency traders consistently outperform low-frequency traders across all regimes, with the largest advantage during Fear markets.
+
+Consistent traders remain profitable across regimes, while inconsistent traders experience severe losses during Greed periods, indicating vulnerability to overconfidence-driven environments.
+
+Clustering analysis further reveals that profitability is concentrated among highly active or capital-intensive trader archetypes.
+
+>>Strategy Recommendations
+
+**Strategy 1 — Regime-Based Risk Control**
+
+During Greed regimes, apply stricter risk controls for historically inconsistent traders.
+This may include reducing position size, limiting exposure, or tightening stop-loss thresholds.
+Evidence suggests Greed periods amplify losses for weaker accounts.
+
+**Strategy 2 — Volatility-Adjusted Activity Allocation**
+
+During Fear regimes, allow higher trading activity for historically high-frequency and consistent traders.
+These environments exhibit higher volatility and profit dispersion, where skilled active traders generate outsized returns.
+
+However, exposure caps should remain in place for low-frequency or inconsistent accounts.
+
+This framework supports regime-aware capital allocation and risk management decisions rather than uniform trading rules across market conditions.
